@@ -1,0 +1,138 @@
+{
+  "units": [
+    {
+      "unit": 1,
+      "slug": "unit-01-limits-and-continuity",
+      "name": "Limits and Continuity",
+      "description": "Students explore how limits allow us to understand function behavior near a point and at infinity, building the conceptual foundation for all of calculus.",
+      "exam_weight_category": "Foundational",
+      "priority_level": "High",
+      "class_average_pct": 0.0,
+      "notes": "Update class_average_pct after running analyze_results.py",
+      "key_skills": [
+        "Estimate limits from graphs, tables & equations",
+        "Evaluate one-sided and infinite limits",
+        "Determine continuity at a point and on an interval",
+        "Classify discontinuities",
+        "Apply the Intermediate Value Theorem"
+      ]
+    },
+    {
+      "unit": 2,
+      "slug": "unit-02-differentiation-definition-and-fundamental-properties",
+      "name": "Differentiation: Definition and Fundamental Properties",
+      "description": "Students apply limits to define the derivative and develop fluency with basic differentiation rules across multiple representations.",
+      "exam_weight_category": "Core",
+      "priority_level": "High",
+      "class_average_pct": 0.0,
+      "notes": "Update class_average_pct after running analyze_results.py",
+      "key_skills": [
+        "Define and interpret the derivative as a rate of change",
+        "Apply power, product, and quotient rules",
+        "Differentiate trig, exponential & logarithmic functions",
+        "Determine differentiability and connect to continuity",
+        "Write equations of tangent lines"
+      ]
+    },
+    {
+      "unit": 3,
+      "slug": "unit-03-differentiation-composite-implicit-and-inverse-functions",
+      "name": "Differentiation: Composite, Implicit, and Inverse Functions",
+      "description": "Students master the chain rule, implicit differentiation, and derivatives of inverse functions, including higher-order derivatives.",
+      "exam_weight_category": "Core",
+      "priority_level": "High",
+      "class_average_pct": 0.0,
+      "notes": "Update class_average_pct after running analyze_results.py",
+      "key_skills": [
+        "Apply the chain rule to composite functions",
+        "Use implicit differentiation",
+        "Find derivatives of inverse and inverse trig functions",
+        "Compute higher-order derivatives"
+      ]
+    },
+    {
+      "unit": 4,
+      "slug": "unit-04-contextual-applications-of-differentiation",
+      "name": "Contextual Applications of Differentiation",
+      "description": "Students apply derivatives to model and solve real-world problems involving rates of change, motion, and approximation.",
+      "exam_weight_category": "Core",
+      "priority_level": "Medium",
+      "class_average_pct": 0.0,
+      "notes": "Update class_average_pct after running analyze_results.py",
+      "key_skills": [
+        "Interpret derivatives in applied contexts",
+        "Model velocity and acceleration",
+        "Set up and solve related rates problems",
+        "Use linearization to approximate values",
+        "Apply L'Hôpital's Rule"
+      ]
+    },
+    {
+      "unit": 5,
+      "slug": "unit-05-analytical-applications-of-differentiation",
+      "name": "Analytical Applications of Differentiation",
+      "description": "Students analyze relationships among a function and its derivatives to solve optimization problems and justify conclusions about behavior.",
+      "exam_weight_category": "Core",
+      "priority_level": "High",
+      "class_average_pct": 0.0,
+      "notes": "Update class_average_pct after running analyze_results.py",
+      "key_skills": [
+        "Apply the Mean Value Theorem",
+        "Determine intervals of increase/decrease and critical points",
+        "Use first and second derivative tests",
+        "Determine concavity and locate inflection points",
+        "Solve applied optimization problems"
+      ]
+    },
+    {
+      "unit": 6,
+      "slug": "unit-06-integration-and-accumulation-of-change",
+      "name": "Integration and Accumulation of Change",
+      "description": "Students apply limits to define definite integrals and discover how the Fundamental Theorem of Calculus connects differentiation and integration.",
+      "exam_weight_category": "Core",
+      "priority_level": "High",
+      "class_average_pct": 0.0,
+      "notes": "Update class_average_pct after running analyze_results.py",
+      "key_skills": [
+        "Compute and interpret Riemann sums",
+        "Evaluate definite integrals",
+        "Apply both parts of the Fundamental Theorem of Calculus",
+        "Find antiderivatives using u-substitution",
+        "Interpret definite integrals in context"
+      ]
+    },
+    {
+      "unit": 7,
+      "slug": "unit-07-differential-equations",
+      "name": "Differential Equations",
+      "description": "Students solve differential equations and apply them to model exponential growth, decay, and other real-world phenomena.",
+      "exam_weight_category": "Important",
+      "priority_level": "Medium",
+      "class_average_pct": 0.0,
+      "notes": "Update class_average_pct after running analyze_results.py",
+      "key_skills": [
+        "Interpret and sketch slope fields",
+        "Approximate solutions using Euler's method",
+        "Solve separable differential equations",
+        "Model exponential growth and decay"
+      ]
+    },
+    {
+      "unit": 8,
+      "slug": "unit-08-applications-of-integration",
+      "name": "Applications of Integration",
+      "description": "Students use integration to solve problems involving net change, area between curves, and volumes of 3-D solids.",
+      "exam_weight_category": "Core",
+      "priority_level": "High",
+      "class_average_pct": 0.0,
+      "notes": "Update class_average_pct after running analyze_results.py",
+      "key_skills": [
+        "Find the average value of a function",
+        "Analyze particle motion using integrals",
+        "Calculate area between curves",
+        "Find volume using disk and washer methods",
+        "Find volume using known cross-section shapes"
+      ]
+    }
+  ]
+}

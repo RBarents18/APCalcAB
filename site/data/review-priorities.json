@@ -1,0 +1,283 @@
+{
+  "generated_from": "data/standards_map.csv",
+  "summary": {
+    "High": 31,
+    "Medium": 8,
+    "Low": 0
+  },
+  "skills": [
+    {
+      "unit": 1,
+      "topic": "Limits and Continuity",
+      "skill": "Estimate limits from graphs",
+      "exam_weight_category": "Foundational",
+      "review_priority": "High"
+    },
+    {
+      "unit": 1,
+      "topic": "Limits and Continuity",
+      "skill": "Evaluate a limit algebraically",
+      "exam_weight_category": "Foundational",
+      "review_priority": "High"
+    },
+    {
+      "unit": 1,
+      "topic": "Limits and Continuity",
+      "skill": "Determine one-sided limits",
+      "exam_weight_category": "Foundational",
+      "review_priority": "High"
+    },
+    {
+      "unit": 1,
+      "topic": "Limits and Continuity",
+      "skill": "Determine continuity at a point",
+      "exam_weight_category": "Foundational",
+      "review_priority": "High"
+    },
+    {
+      "unit": 1,
+      "topic": "Limits and Continuity",
+      "skill": "Classify a discontinuity",
+      "exam_weight_category": "Foundational",
+      "review_priority": "Medium"
+    },
+    {
+      "unit": 1,
+      "topic": "Limits and Continuity",
+      "skill": "Apply Intermediate Value Theorem",
+      "exam_weight_category": "Foundational",
+      "review_priority": "Medium"
+    },
+    {
+      "unit": 2,
+      "topic": "Differentiation: Definition and Fundamental Properties",
+      "skill": "Interpret derivative as rate of change",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 2,
+      "topic": "Differentiation: Definition and Fundamental Properties",
+      "skill": "Apply power rule",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 2,
+      "topic": "Differentiation: Definition and Fundamental Properties",
+      "skill": "Apply product rule",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 2,
+      "topic": "Differentiation: Definition and Fundamental Properties",
+      "skill": "Apply quotient rule",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 2,
+      "topic": "Differentiation: Definition and Fundamental Properties",
+      "skill": "Differentiate trigonometric functions",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 2,
+      "topic": "Differentiation: Definition and Fundamental Properties",
+      "skill": "Write equation of tangent line",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 3,
+      "topic": "Differentiation: Composite Implicit and Inverse Functions",
+      "skill": "Apply chain rule",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 3,
+      "topic": "Differentiation: Composite Implicit and Inverse Functions",
+      "skill": "Use implicit differentiation",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 3,
+      "topic": "Differentiation: Composite Implicit and Inverse Functions",
+      "skill": "Differentiate inverse trig functions",
+      "exam_weight_category": "Important",
+      "review_priority": "Medium"
+    },
+    {
+      "unit": 3,
+      "topic": "Differentiation: Composite Implicit and Inverse Functions",
+      "skill": "Find second derivative",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 4,
+      "topic": "Contextual Applications of Differentiation",
+      "skill": "Interpret derivatives in context",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 4,
+      "topic": "Contextual Applications of Differentiation",
+      "skill": "Solve related rates problems",
+      "exam_weight_category": "Important",
+      "review_priority": "High"
+    },
+    {
+      "unit": 4,
+      "topic": "Contextual Applications of Differentiation",
+      "skill": "Apply L'Hopital's Rule",
+      "exam_weight_category": "Important",
+      "review_priority": "Medium"
+    },
+    {
+      "unit": 4,
+      "topic": "Contextual Applications of Differentiation",
+      "skill": "Use linearization to approximate",
+      "exam_weight_category": "Important",
+      "review_priority": "Medium"
+    },
+    {
+      "unit": 5,
+      "topic": "Analytical Applications of Differentiation",
+      "skill": "Determine intervals of increase and decrease",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 5,
+      "topic": "Analytical Applications of Differentiation",
+      "skill": "Find and classify critical points",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 5,
+      "topic": "Analytical Applications of Differentiation",
+      "skill": "Determine concavity and inflection points",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 5,
+      "topic": "Analytical Applications of Differentiation",
+      "skill": "Solve optimization problems",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 5,
+      "topic": "Analytical Applications of Differentiation",
+      "skill": "Apply Mean Value Theorem",
+      "exam_weight_category": "Important",
+      "review_priority": "Medium"
+    },
+    {
+      "unit": 6,
+      "topic": "Integration and Accumulation of Change",
+      "skill": "Compute Riemann sums",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 6,
+      "topic": "Integration and Accumulation of Change",
+      "skill": "Evaluate a definite integral",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 6,
+      "topic": "Integration and Accumulation of Change",
+      "skill": "Apply Fundamental Theorem of Calculus",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 6,
+      "topic": "Integration and Accumulation of Change",
+      "skill": "Use u-substitution",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 6,
+      "topic": "Integration and Accumulation of Change",
+      "skill": "Interpret definite integrals in context",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 7,
+      "topic": "Differential Equations",
+      "skill": "Interpret slope fields",
+      "exam_weight_category": "Important",
+      "review_priority": "High"
+    },
+    {
+      "unit": 7,
+      "topic": "Differential Equations",
+      "skill": "Use separation of variables",
+      "exam_weight_category": "Important",
+      "review_priority": "High"
+    },
+    {
+      "unit": 7,
+      "topic": "Differential Equations",
+      "skill": "Solve exponential growth and decay",
+      "exam_weight_category": "Important",
+      "review_priority": "High"
+    },
+    {
+      "unit": 7,
+      "topic": "Differential Equations",
+      "skill": "Apply Euler's method",
+      "exam_weight_category": "Important",
+      "review_priority": "Medium"
+    },
+    {
+      "unit": 8,
+      "topic": "Applications of Integration",
+      "skill": "Find area between curves",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 8,
+      "topic": "Applications of Integration",
+      "skill": "Calculate average value of a function",
+      "exam_weight_category": "Core",
+      "review_priority": "High"
+    },
+    {
+      "unit": 8,
+      "topic": "Applications of Integration",
+      "skill": "Find volume using disk method",
+      "exam_weight_category": "Important",
+      "review_priority": "High"
+    },
+    {
+      "unit": 8,
+      "topic": "Applications of Integration",
+      "skill": "Find volume using washer method",
+      "exam_weight_category": "Important",
+      "review_priority": "High"
+    },
+    {
+      "unit": 8,
+      "topic": "Applications of Integration",
+      "skill": "Find volume using known cross sections",
+      "exam_weight_category": "Important",
+      "review_priority": "Medium"
+    }
+  ]
+}
