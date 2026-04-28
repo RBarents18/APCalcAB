@@ -13,13 +13,15 @@ Run from the repository root:
     python tools/export_site_data.py
 
 No third-party dependencies required (stdlib only).
+Requires Python 3.8+.
 """
 
 import csv
 import json
-import os
 import sys
+from collections import Counter
 from pathlib import Path
+from typing import Any, Dict, List
 
 # ── Paths ──────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -165,7 +167,7 @@ UNIT_META = {
 
 # ── Helpers ────────────────────────────────────────────────────────────
 
-def load_csv(path: Path) -> list[dict]:
+def load_csv(path: Path) -> List[Dict[str, Any]]:
     """Read a CSV file and return a list of row dicts. Returns [] if missing."""
     if not path.exists():
         print(f"  [warn] File not found: {path}", file=sys.stderr)
@@ -241,7 +243,6 @@ def export_review_priorities() -> None:
         })
 
     # Group counts for the summary field
-    from collections import Counter
     counts = Counter(s["review_priority"] for s in skills_out)
 
     write_json(
