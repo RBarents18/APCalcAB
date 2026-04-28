@@ -1,0 +1,16 @@
+assessment_id,title,unit,type,date,total_points
+U1Q1,Unit 1 Quiz 1 - Limits,1,quiz,2026-09-10,20
+U1T1,Unit 1 Test - Limits and Continuity,1,test,2026-09-25,50
+U2Q1,Unit 2 Quiz 1 - Basic Derivatives,2,quiz,2026-10-08,20
+U2T1,Unit 2 Test - Differentiation Fundamentals,2,test,2026-10-22,50
+U3Q1,Unit 3 Quiz 1 - Chain Rule,3,quiz,2026-11-05,20
+U3T1,Unit 3 Test - Composite Implicit Inverse,3,test,2026-11-19,50
+U4Q1,Unit 4 Quiz 1 - Related Rates,4,quiz,2026-12-03,20
+U4T1,Unit 4 Test - Contextual Applications,4,test,2026-12-17,50
+U5T1,Unit 5 Test - Analytical Applications,5,test,2027-01-28,50
+U6Q1,Unit 6 Quiz 1 - Riemann Sums,6,quiz,2027-02-11,20
+U6T1,Unit 6 Test - Integration,6,test,2027-02-25,50
+U7Q1,Unit 7 Quiz 1 - Slope Fields,7,quiz,2027-03-10,20
+U7T1,Unit 7 Test - Differential Equations,7,test,2027-03-24,50
+U8T1,Unit 8 Test - Applications of Integration,8,test,2027-04-08,50
+APREV1,AP Exam Review FRQ Set 1,0,frq,2027-04-22,27

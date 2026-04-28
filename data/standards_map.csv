@@ -1,0 +1,40 @@
+topic,skill,unit,exam_weight_category,review_priority
+Limits and Continuity,Estimate limits from graphs,1,Foundational,High
+Limits and Continuity,Evaluate a limit algebraically,1,Foundational,High
+Limits and Continuity,Determine one-sided limits,1,Foundational,High
+Limits and Continuity,Determine continuity at a point,1,Foundational,High
+Limits and Continuity,Classify a discontinuity,1,Foundational,Medium
+Limits and Continuity,Apply Intermediate Value Theorem,1,Foundational,Medium
+Differentiation: Definition and Fundamental Properties,Interpret derivative as rate of change,2,Core,High
+Differentiation: Definition and Fundamental Properties,Apply power rule,2,Core,High
+Differentiation: Definition and Fundamental Properties,Apply product rule,2,Core,High
+Differentiation: Definition and Fundamental Properties,Apply quotient rule,2,Core,High
+Differentiation: Definition and Fundamental Properties,Differentiate trigonometric functions,2,Core,High
+Differentiation: Definition and Fundamental Properties,Write equation of tangent line,2,Core,High
+Differentiation: Composite Implicit and Inverse Functions,Apply chain rule,3,Core,High
+Differentiation: Composite Implicit and Inverse Functions,Use implicit differentiation,3,Core,High
+Differentiation: Composite Implicit and Inverse Functions,Differentiate inverse trig functions,3,Important,Medium
+Differentiation: Composite Implicit and Inverse Functions,Find second derivative,3,Core,High
+Contextual Applications of Differentiation,Interpret derivatives in context,4,Core,High
+Contextual Applications of Differentiation,Solve related rates problems,4,Important,High
+Contextual Applications of Differentiation,Apply L'Hopital's Rule,4,Important,Medium
+Contextual Applications of Differentiation,Use linearization to approximate,4,Important,Medium
+Analytical Applications of Differentiation,Determine intervals of increase and decrease,5,Core,High
+Analytical Applications of Differentiation,Find and classify critical points,5,Core,High
+Analytical Applications of Differentiation,Determine concavity and inflection points,5,Core,High
+Analytical Applications of Differentiation,Solve optimization problems,5,Core,High
+Analytical Applications of Differentiation,Apply Mean Value Theorem,5,Important,Medium
+Integration and Accumulation of Change,Compute Riemann sums,6,Core,High
+Integration and Accumulation of Change,Evaluate a definite integral,6,Core,High
+Integration and Accumulation of Change,Apply Fundamental Theorem of Calculus,6,Core,High
+Integration and Accumulation of Change,Use u-substitution,6,Core,High
+Integration and Accumulation of Change,Interpret definite integrals in context,6,Core,High
+Differential Equations,Interpret slope fields,7,Important,High
+Differential Equations,Use separation of variables,7,Important,High
+Differential Equations,Solve exponential growth and decay,7,Important,High
+Differential Equations,Apply Euler's method,7,Important,Medium
+Applications of Integration,Find area between curves,8,Core,High
+Applications of Integration,Calculate average value of a function,8,Core,High
+Applications of Integration,Find volume using disk method,8,Important,High
+Applications of Integration,Find volume using washer method,8,Important,High
+Applications of Integration,Find volume using known cross sections,8,Important,Medium

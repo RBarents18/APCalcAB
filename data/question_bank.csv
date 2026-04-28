@@ -1,0 +1,28 @@
+question_id,assessment_id,question_label,topic,skill,format,max_points
+Q001,U1Q1,1,Limits and Continuity,Estimate limits from graphs,mcq,2
+Q002,U1Q1,2,Limits and Continuity,Evaluate a limit algebraically,mcq,2
+Q003,U1Q1,3,Limits and Continuity,Determine one-sided limits,mcq,2
+Q004,U1Q1,4,Limits and Continuity,Determine continuity at a point,mcq,2
+Q005,U1Q1,5,Limits and Continuity,Classify a discontinuity,mcq,2
+Q006,U1Q1,6,Limits and Continuity,Apply Intermediate Value Theorem,frq,10
+Q007,U2Q1,1,Differentiation: Definition and Fundamental Properties,Interpret derivative as rate of change,mcq,2
+Q008,U2Q1,2,Differentiation: Definition and Fundamental Properties,Apply power rule,mcq,2
+Q009,U2Q1,3,Differentiation: Definition and Fundamental Properties,Apply product rule,mcq,2
+Q010,U2Q1,4,Differentiation: Definition and Fundamental Properties,Apply quotient rule,mcq,2
+Q011,U2Q1,5,Differentiation: Definition and Fundamental Properties,Differentiate trigonometric functions,mcq,2
+Q012,U2Q1,6,Differentiation: Definition and Fundamental Properties,Write equation of tangent line,frq,10
+Q013,U3Q1,1,Differentiation: Composite Implicit and Inverse Functions,Apply chain rule,mcq,4
+Q014,U3Q1,2,Differentiation: Composite Implicit and Inverse Functions,Use implicit differentiation,mcq,4
+Q015,U3Q1,3,Differentiation: Composite Implicit and Inverse Functions,Differentiate inverse trig functions,mcq,4
+Q016,U3Q1,4,Differentiation: Composite Implicit and Inverse Functions,Find second derivative,frq,8
+Q017,U4Q1,1,Contextual Applications of Differentiation,Interpret derivatives in context,mcq,4
+Q018,U4Q1,2,Contextual Applications of Differentiation,Solve related rates problems,frq,16
+Q019,U6Q1,1,Integration and Accumulation of Change,Compute left Riemann sum,mcq,4
+Q020,U6Q1,2,Integration and Accumulation of Change,Compute trapezoidal approximation,mcq,4
+Q021,U6Q1,3,Integration and Accumulation of Change,Apply Fundamental Theorem of Calculus,mcq,4
+Q022,U6Q1,4,Integration and Accumulation of Change,Evaluate a definite integral,frq,8
+Q023,U7Q1,1,Differential Equations,Interpret slope fields,mcq,5
+Q024,U7Q1,2,Differential Equations,Use separation of variables,frq,15
+Q025,APREV1,1,Differential Equations,Interpret slope fields,frq,9
+Q026,APREV1,2,Applications of Integration,Find area between curves,frq,9
+Q027,APREV1,3,Analytical Applications of Differentiation,Justify behavior using derivative analysis,frq,9

@@ -1,0 +1,9 @@
+student_id,first_name,last_name,grade_level,section,email
+1001,Ana,Rivera,12,A,ana.rivera@example.org
+1002,Marcus,Lee,12,A,marcus.lee@example.org
+1003,Sophia,Patel,11,B,sophia.patel@example.org
+1004,Jordan,Nguyen,12,B,jordan.nguyen@example.org
+1005,Priya,Sharma,11,A,priya.sharma@example.org
+1006,Caleb,Thompson,12,A,caleb.thompson@example.org
+1007,Zoe,Martinez,11,B,zoe.martinez@example.org
+1008,Elijah,Brown,12,B,elijah.brown@example.org
