@@ -1,0 +1,9 @@
+unit,unit_name,class_average_pct,priority_level,exam_weight_category,notes
+1,Limits and Continuity,0,High,Foundational,Update class_average_pct after running analyze_results.py
+2,Differentiation: Definition and Fundamental Properties,0,High,Core,Update class_average_pct after running analyze_results.py
+3,Differentiation: Composite Implicit and Inverse Functions,0,High,Core,Update class_average_pct after running analyze_results.py
+4,Contextual Applications of Differentiation,0,Medium,Core,Update class_average_pct after running analyze_results.py
+5,Analytical Applications of Differentiation,0,High,Core,Update class_average_pct after running analyze_results.py
+6,Integration and Accumulation of Change,0,High,Core,Update class_average_pct after running analyze_results.py
+7,Differential Equations,0,Medium,Important,Update class_average_pct after running analyze_results.py
+8,Applications of Integration,0,High,Core,Update class_average_pct after running analyze_results.py
