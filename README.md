@@ -26,6 +26,35 @@ The repository is organized around the 8 official AP Calculus AB units:
 - Shape end-of-year AP review using class performance data
 - Provide a structure that can absorb content migrated from Google Drive
 
+## Visual Course Hub (Phase 2)
+
+The `site/` directory contains a static HTML course hub that makes the repository navigable
+as a visual teaching platform. Open `site/index.html` in any browser to use it locally,
+or enable **GitHub Pages** (Settings → Pages → branch `main`, folder `/site`) to publish it.
+
+| Page | Purpose |
+|------|---------|
+| `site/index.html` | Homepage — hero, 8-unit overview, quick links, workflow |
+| `site/units.html` | Visual cards for all 8 AP Calculus AB units |
+| `site/review.html` | AP Exam review planner driven by JSON data |
+
+### Regenerating site data
+
+After running the Python analysis tools, regenerate the JSON assets consumed by the site:
+
+```bash
+python tools/export_site_data.py
+```
+
+This reads `data/standards_map.csv` and `review/unit_priority_tracker.csv` and writes:
+
+- `site/data/units.json` – unit metadata and priority levels
+- `site/data/review-priorities.json` – skill-level review priorities
+
+Reload `site/review.html` to see updated data.
+
+---
+
 ## Folder Structure
 
 ```
@@ -53,6 +82,14 @@ APCalcAB/
 ├── review/              # AP Exam review planning materials
 │   ├── student_review_plans/
 │   └── class_review_reports/
+├── site/                # Static HTML course hub (Phase 2)
+│   ├── index.html       # Homepage
+│   ├── units.html       # All 8 units visual page
+│   ├── review.html      # AP review planner
+│   ├── assets/
+│   │   ├── css/styles.css
+│   │   └── js/main.js
+│   └── data/            # Generated JSON (from export_site_data.py)
 ├── tools/               # Python scripts for analysis and report generation
 └── docs/                # Migration guides, naming conventions, inventory
 ```
@@ -94,6 +131,7 @@ Python scripts that read CSVs and produce useful outputs:
 - `analyze_results.py` – skill-level performance summary
 - `generate_feedback.py` – per-student feedback reports
 - `build_review_plan.py` – class review priority list
+- `export_site_data.py` – generate JSON for the visual course hub
 
 ### `docs/`
 Reference documents:
@@ -110,11 +148,13 @@ Reference documents:
 5. Run `tools/analyze_results.py` to view skill-level performance
 6. Run `tools/generate_feedback.py` to produce student reports in `feedback/generated/`
 7. Run `tools/build_review_plan.py` to update `review/` priorities
-8. Adjust instruction and AP review based on outputs
+8. Run `tools/export_site_data.py` to refresh site JSON data
+9. Adjust instruction and AP review based on outputs
 
 ## Future Enhancements
 
-- Automated performance dashboard
+- Publish as a GitHub Pages site (enable Pages on `main`, root `/site`)
+- Automated performance dashboard with charts
 - Integration with Google Forms, Canvas, or AP Classroom exports
 - Student-specific study packet generation
 - Visual mastery tracking by unit and skill

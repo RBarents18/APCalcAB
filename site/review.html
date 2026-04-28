@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AP Review — AP Calculus AB Course Hub</title>
+  <meta name="description" content="Data-driven AP Exam review planner: high, medium, and maintenance priority skills for AP Calculus AB." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .review-hero {
+      background: linear-gradient(135deg, #1a2744 0%, #1e3a5f 100%);
+      color: var(--white);
+      padding: 3.5rem 1.5rem 3rem;
+      text-align: center;
+    }
+    .review-hero h1 { color: var(--white); margin-bottom: .5rem; }
+    .review-hero p  { color: rgba(255,255,255,.75); max-width: 580px; margin: .5rem auto 0; }
+
+    .review-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    @media (max-width: 860px) {
+      .review-layout { grid-template-columns: 1fr; }
+    }
+
+    .review-sidebar {
+      position: sticky;
+      top: 75px;
+    }
+
+    .sidebar-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 1rem;
+    }
+    .sidebar-card h4 {
+      color: var(--navy);
+      margin-bottom: .6rem;
+      font-size: .9rem;
+    }
+    .sidebar-card p, .sidebar-card li {
+      font-size: .82rem;
+      color: var(--gray-600);
+    }
+    .sidebar-card ul { list-style: none; }
+    .sidebar-card ul li { padding: .2rem 0; display: flex; gap: .4rem; align-items: center; }
+
+    .unit-summary-row {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      padding: .5rem 0;
+      border-bottom: 1px solid var(--gray-100);
+      font-size: .82rem;
+    }
+    .unit-summary-row:last-child { border-bottom: none; }
+    .us-num {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--white);
+      font-size: .7rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .us-name { flex: 1; color: var(--gray-700); font-weight: 500; }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <span class="nav-brand">AP <span>Calculus AB</span></span>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="units.html">Units</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="../README.md">Docs</a></li>
+        <li><a href="https://github.com/RBarents18/APCalcAB" target="_blank" rel="noopener">GitHub ↗</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Page Hero ────────────────────────────────────────── -->
+  <header class="review-hero">
+    <span class="hero-badge">📊 AP Exam Review</span>
+    <h1>AP Review Planner</h1>
+    <p>Skills ranked by priority level — driven by class performance data from <code>data/results.csv</code>.</p>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="page-container">
+
+        <div class="review-layout">
+
+          <!-- ── Sidebar ─────────────────────────────── -->
+          <aside class="review-sidebar" aria-label="Review sidebar">
+
+            <!-- How it works -->
+            <div class="sidebar-card">
+              <h4>⚙️ How Priorities Are Set</h4>
+              <div class="workflow-steps" style="gap:.6rem;">
+                <div class="workflow-step">
+                  <div class="step-number" style="width:24px;height:24px;font-size:.72rem;">1</div>
+                  <div class="step-content">
+                    <p>Import scores into <code>data/results.csv</code></p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number" style="width:24px;height:24px;font-size:.72rem;">2</div>
+                  <div class="step-content">
+                    <p>Run <code>tools/build_review_plan.py</code></p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number" style="width:24px;height:24px;font-size:.72rem;">3</div>
+                  <div class="step-content">
+                    <p>Run <code>tools/export_site_data.py</code></p>
+                  </div>
+                </div>
+                <div class="workflow-step">
+                  <div class="step-number" style="width:24px;height:24px;font-size:.72rem;">4</div>
+                  <div class="step-content">
+                    <p>Reload this page — data auto-renders</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Priority key -->
+            <div class="sidebar-card">
+              <h4>🗝️ Priority Key</h4>
+              <ul>
+                <li><span style="color:#dc2626; font-size:1rem;">🔴</span> <strong>High</strong> — low performance + high AP impact</li>
+                <li><span style="color:#d97706; font-size:1rem;">🟡</span> <strong>Medium</strong> — moderate performance or recurring errors</li>
+                <li><span style="color:#16a34a; font-size:1rem;">🟢</span> <strong>Maintenance</strong> — strong but still needs spiral review</li>
+              </ul>
+            </div>
+
+            <!-- Unit summary -->
+            <div class="sidebar-card">
+              <h4>📋 Unit Priority Summary</h4>
+              <div id="unit-summary-list">
+                <!-- Populated by JS from units.json, or static fallback below -->
+                <div class="unit-summary-row">
+                  <div class="us-num">1</div>
+                  <div class="us-name">Limits &amp; Continuity</div>
+                  <span class="badge badge-red">High</span>
+                </div>
+                <div class="unit-summary-row">
+                  <div class="us-num">2</div>
+                  <div class="us-name">Differentiation: Fundamentals</div>
+                  <span class="badge badge-red">High</span>
+                </div>
+                <div class="unit-summary-row">
+                  <div class="us-num">3</div>
+                  <div class="us-name">Differentiation: Advanced</div>
+                  <span class="badge badge-red">High</span>
+                </div>
+                <div class="unit-summary-row">
+                  <div class="us-num">4</div>
+                  <div class="us-name">Contextual Applications</div>
+                  <span class="badge badge-gold">Med</span>
+                </div>
+                <div class="unit-summary-row">
+                  <div class="us-num">5</div>
+                  <div class="us-name">Analytical Applications</div>
+                  <span class="badge badge-red">High</span>
+                </div>
+                <div class="unit-summary-row">
+                  <div class="us-num">6</div>
+                  <div class="us-name">Integration &amp; Accumulation</div>
+                  <span class="badge badge-red">High</span>
+                </div>
+                <div class="unit-summary-row">
+                  <div class="us-num">7</div>
+                  <div class="us-name">Differential Equations</div>
+                  <span class="badge badge-gold">Med</span>
+                </div>
+                <div class="unit-summary-row">
+                  <div class="us-num">8</div>
+                  <div class="us-name">Applications of Integration</div>
+                  <span class="badge badge-red">High</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Future placeholder: chart hook -->
+            <div class="placeholder-box" style="font-size:.78rem;">
+              <p>📈 Performance chart</p>
+              <p style="margin-top:.25rem; color:var(--gray-400);">Coming in a future update — will display class averages per unit once data is imported.</p>
+            </div>
+
+          </aside>
+
+          <!-- ── Main Review Content ─────────────────── -->
+          <div>
+            <!-- Data-driven container (populated by main.js) -->
+            <div id="review-data-container">
+              <!-- JS will replace this content -->
+              <div class="loading-spinner">
+                <div class="spinner"></div> Loading review data…
+              </div>
+            </div>
+
+            <!-- Static fallback (hidden; used by JS if fetch fails) -->
+            <div id="review-static-fallback" style="display:none;">
+
+              <div class="priority-section">
+                <div class="priority-section-header priority-header--high">
+                  <span style="font-size:1.1rem">🔴</span>
+                  <h3>High Priority</h3>
+                  <span class="pcount">28 skills</span>
+                </div>
+                <div class="priority-section-body">
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 1</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Estimate limits from graphs</div>
+                      <div class="priority-item-topic">Limits and Continuity</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 1</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Evaluate a limit algebraically</div>
+                      <div class="priority-item-topic">Limits and Continuity</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 1</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Determine one-sided limits</div>
+                      <div class="priority-item-topic">Limits and Continuity</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 1</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Determine continuity at a point</div>
+                      <div class="priority-item-topic">Limits and Continuity</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 2</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Interpret derivative as rate of change</div>
+                      <div class="priority-item-topic">Differentiation: Definition and Fundamental Properties</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 2</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Apply power rule</div>
+                      <div class="priority-item-topic">Differentiation: Definition and Fundamental Properties</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 2</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Apply product rule</div>
+                      <div class="priority-item-topic">Differentiation: Definition and Fundamental Properties</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 2</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Apply quotient rule</div>
+                      <div class="priority-item-topic">Differentiation: Definition and Fundamental Properties</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 2</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Differentiate trigonometric functions</div>
+                      <div class="priority-item-topic">Differentiation: Definition and Fundamental Properties</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 2</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Write equation of tangent line</div>
+                      <div class="priority-item-topic">Differentiation: Definition and Fundamental Properties</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 3</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Apply chain rule</div>
+                      <div class="priority-item-topic">Differentiation: Composite, Implicit and Inverse Functions</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 3</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Use implicit differentiation</div>
+                      <div class="priority-item-topic">Differentiation: Composite, Implicit and Inverse Functions</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 3</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Find second derivative</div>
+                      <div class="priority-item-topic">Differentiation: Composite, Implicit and Inverse Functions</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 4</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Interpret derivatives in context</div>
+                      <div class="priority-item-topic">Contextual Applications of Differentiation</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 4</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Solve related rates problems</div>
+                      <div class="priority-item-topic">Contextual Applications of Differentiation</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 5</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Determine intervals of increase and decrease</div>
+                      <div class="priority-item-topic">Analytical Applications of Differentiation</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 5</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Find and classify critical points</div>
+                      <div class="priority-item-topic">Analytical Applications of Differentiation</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 5</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Determine concavity and inflection points</div>
+                      <div class="priority-item-topic">Analytical Applications of Differentiation</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 5</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Solve optimization problems</div>
+                      <div class="priority-item-topic">Analytical Applications of Differentiation</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 6</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Compute Riemann sums</div>
+                      <div class="priority-item-topic">Integration and Accumulation of Change</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 6</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Evaluate a definite integral</div>
+                      <div class="priority-item-topic">Integration and Accumulation of Change</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 6</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Apply Fundamental Theorem of Calculus</div>
+                      <div class="priority-item-topic">Integration and Accumulation of Change</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 6</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Use u-substitution</div>
+                      <div class="priority-item-topic">Integration and Accumulation of Change</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 6</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Interpret definite integrals in context</div>
+                      <div class="priority-item-topic">Integration and Accumulation of Change</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 7</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Interpret slope fields</div>
+                      <div class="priority-item-topic">Differential Equations</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 7</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Use separation of variables</div>
+                      <div class="priority-item-topic">Differential Equations</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 7</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Solve exponential growth and decay</div>
+                      <div class="priority-item-topic">Differential Equations</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 8</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Find area between curves</div>
+                      <div class="priority-item-topic">Applications of Integration</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 8</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Calculate average value of a function</div>
+                      <div class="priority-item-topic">Applications of Integration</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 8</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Find volume using disk method</div>
+                      <div class="priority-item-topic">Applications of Integration</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 8</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Find volume using washer method</div>
+                      <div class="priority-item-topic">Applications of Integration</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="priority-section">
+                <div class="priority-section-header priority-header--medium">
+                  <span style="font-size:1.1rem">🟡</span>
+                  <h3>Medium Priority</h3>
+                  <span class="pcount">7 skills</span>
+                </div>
+                <div class="priority-section-body">
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 1</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Classify a discontinuity</div>
+                      <div class="priority-item-topic">Limits and Continuity</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 1</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Apply Intermediate Value Theorem</div>
+                      <div class="priority-item-topic">Limits and Continuity</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 3</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Differentiate inverse trig functions</div>
+                      <div class="priority-item-topic">Differentiation: Composite, Implicit and Inverse Functions</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 4</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Apply L'Hôpital's Rule</div>
+                      <div class="priority-item-topic">Contextual Applications of Differentiation</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 4</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Use linearization to approximate</div>
+                      <div class="priority-item-topic">Contextual Applications of Differentiation</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 5</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Apply Mean Value Theorem</div>
+                      <div class="priority-item-topic">Analytical Applications of Differentiation</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 7</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Apply Euler's method</div>
+                      <div class="priority-item-topic">Differential Equations</div>
+                    </div>
+                  </div>
+                  <div class="priority-item">
+                    <div class="priority-item-unit">Unit 8</div>
+                    <div class="priority-item-content">
+                      <div class="priority-item-skill">Find volume using known cross sections</div>
+                      <div class="priority-item-topic">Applications of Integration</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /#review-static-fallback -->
+
+          </div><!-- /main review content -->
+
+        </div><!-- /review-layout -->
+      </div><!-- /page-container -->
+    </section>
+
+    <!-- ── Class Review Reports Link ────────────────────── -->
+    <section class="section section--alt" aria-labelledby="reports-heading">
+      <div class="page-container">
+        <div class="section-header">
+          <span class="section-label">Generated Reports</span>
+          <h2 id="reports-heading">Class &amp; Student Review Files</h2>
+          <p>Review plans and class reports are auto-generated by the Python tools and stored in the repository.</p>
+        </div>
+
+        <div class="card-grid">
+          <div class="card card-accent">
+            <h3>📂 Class Review Reports</h3>
+            <p>Whole-class review priority summaries, organized by date. Found in <code>review/class_review_reports/</code>.</p>
+            <a href="https://github.com/RBarents18/APCalcAB/tree/main/review/class_review_reports" class="btn btn-secondary mt-2" target="_blank" rel="noopener" style="margin-top:.75rem;">Browse Reports ↗</a>
+          </div>
+          <div class="card card-accent card-accent--teal">
+            <h3>👤 Student Review Plans</h3>
+            <p>Individualized review focus lists per student, generated from quiz and test results. Found in <code>review/student_review_plans/</code>.</p>
+            <a href="https://github.com/RBarents18/APCalcAB/tree/main/review/student_review_plans" class="btn btn-secondary mt-2" target="_blank" rel="noopener" style="margin-top:.75rem;">Browse Plans ↗</a>
+          </div>
+          <div class="card card-accent card-accent--gold">
+            <h3>📊 Unit Priority Tracker</h3>
+            <p>CSV tracking class average and priority level per unit. Update after each analysis run via <code>review/unit_priority_tracker.csv</code>.</p>
+            <a href="https://github.com/RBarents18/APCalcAB/blob/main/review/unit_priority_tracker.csv" class="btn btn-secondary mt-2" target="_blank" rel="noopener" style="margin-top:.75rem;">View Tracker ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p>AP Calculus AB Course Hub &nbsp;·&nbsp;
+      <a href="https://github.com/RBarents18/APCalcAB" target="_blank" rel="noopener">RBarents18/APCalcAB</a>
+      &nbsp;·&nbsp; Built for classroom use.
+    </p>
+    <p style="margin-top:.4rem; font-size:.78rem;">
+      AP® is a registered trademark of the College Board, which is not affiliated with this project.
+    </p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

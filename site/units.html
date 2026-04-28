@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Units — AP Calculus AB Course Hub</title>
+  <meta name="description" content="Visual overview of all 8 AP Calculus AB units: objectives, key skills, and AP Exam relevance." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    /* Units-page specific overrides */
+    .units-hero {
+      background: linear-gradient(135deg, var(--navy-dark) 0%, #1a3a6b 100%);
+      color: var(--white);
+      padding: 3.5rem 1.5rem 3rem;
+      text-align: center;
+    }
+    .units-hero h1 { color: var(--white); margin-bottom: .5rem; }
+    .units-hero p  { color: rgba(255,255,255,.75); max-width: 560px; margin: .5rem auto 0; }
+
+    .unit-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    /* color-coded top border per unit cluster */
+    .uc-1 .unit-card-header { border-top: 4px solid #7c3aed; }
+    .uc-2 .unit-card-header { border-top: 4px solid #2563eb; }
+    .uc-3 .unit-card-header { border-top: 4px solid #0891b2; }
+    .uc-4 .unit-card-header { border-top: 4px solid #0d9488; }
+    .uc-5 .unit-card-header { border-top: 4px solid #d97706; }
+    .uc-6 .unit-card-header { border-top: 4px solid #ea580c; }
+    .uc-7 .unit-card-header { border-top: 4px solid #dc2626; }
+    .uc-8 .unit-card-header { border-top: 4px solid #16a34a; }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <span class="nav-brand">AP <span>Calculus AB</span></span>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="units.html">Units</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="../README.md">Docs</a></li>
+        <li><a href="https://github.com/RBarents18/APCalcAB" target="_blank" rel="noopener">GitHub ↗</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Page Hero ────────────────────────────────────────── -->
+  <header class="units-hero">
+    <span class="hero-badge">📚 Curriculum Map</span>
+    <h1>AP Calculus AB Units</h1>
+    <p>All 8 units aligned to the official AP Calculus AB framework—objectives, key skills, and AP Exam focus.</p>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="page-container">
+
+        <div class="info-banner">
+          <span class="info-banner-icon">💡</span>
+          <span>Each unit folder in <code>curriculum/</code> contains <strong>overview.md</strong>, <strong>objectives.md</strong>, <strong>skills.md</strong>, and <strong>practice.md</strong>. Use the GitHub links to navigate directly to source files.</span>
+        </div>
+
+        <div class="unit-grid">
+
+          <!-- Unit 1 -->
+          <article class="unit-card uc-1">
+            <div class="unit-card-header">
+              <div style="display:flex; align-items:center; gap:.75rem;">
+                <div class="unit-number-badge" style="background:#7c3aed;">1</div>
+                <h3>Limits and Continuity</h3>
+              </div>
+            </div>
+            <div class="unit-card-body">
+              <p class="unit-desc">
+                Students explore how limits allow us to understand function behavior near a point and at infinity,
+                building the conceptual foundation for all of calculus.
+              </p>
+              <ul class="unit-skills">
+                <li>Estimate limit values from graphs, tables &amp; equations</li>
+                <li>Evaluate one-sided and infinite limits</li>
+                <li>Determine continuity at a point and over an interval</li>
+                <li>Classify discontinuities (removable, jump, essential)</li>
+                <li>Apply the Intermediate Value Theorem</li>
+              </ul>
+            </div>
+            <div class="unit-footer">
+              <span class="badge badge-blue">Foundational</span>
+              <a href="https://github.com/RBarents18/APCalcAB/tree/main/curriculum/unit-01-limits-and-continuity" class="btn btn-secondary" style="font-size:.78rem; padding:.3rem .7rem;" target="_blank" rel="noopener">View Files ↗</a>
+            </div>
+          </article>
+
+          <!-- Unit 2 -->
+          <article class="unit-card uc-2">
+            <div class="unit-card-header">
+              <div style="display:flex; align-items:center; gap:.75rem;">
+                <div class="unit-number-badge" style="background:#2563eb;">2</div>
+                <h3>Differentiation: Definition &amp; Fundamental Properties</h3>
+              </div>
+            </div>
+            <div class="unit-card-body">
+              <p class="unit-desc">
+                Students apply limits to define the derivative and develop fluency with basic differentiation rules
+                across multiple representations.
+              </p>
+              <ul class="unit-skills">
+                <li>Define and interpret the derivative as a rate of change</li>
+                <li>Apply power, product, and quotient rules</li>
+                <li>Differentiate trigonometric, exponential &amp; logarithmic functions</li>
+                <li>Determine differentiability and connect to continuity</li>
+                <li>Write equations of tangent lines</li>
+              </ul>
+            </div>
+            <div class="unit-footer">
+              <span class="badge badge-blue">Core</span>
+              <a href="https://github.com/RBarents18/APCalcAB/tree/main/curriculum/unit-02-differentiation-definition-and-fundamental-properties" class="btn btn-secondary" style="font-size:.78rem; padding:.3rem .7rem;" target="_blank" rel="noopener">View Files ↗</a>
+            </div>
+          </article>
+
+          <!-- Unit 3 -->
+          <article class="unit-card uc-3">
+            <div class="unit-card-header">
+              <div style="display:flex; align-items:center; gap:.75rem;">
+                <div class="unit-number-badge" style="background:#0891b2;">3</div>
+                <h3>Differentiation: Composite, Implicit &amp; Inverse Functions</h3>
+              </div>
+            </div>
+            <div class="unit-card-body">
+              <p class="unit-desc">
+                Students master the chain rule, implicit differentiation, and derivatives of inverse functions,
+                including higher-order derivatives.
+              </p>
+              <ul class="unit-skills">
+                <li>Apply the chain rule to composite functions</li>
+                <li>Use implicit differentiation</li>
+                <li>Find derivatives of inverse and inverse trig functions</li>
+                <li>Compute higher-order derivatives</li>
+                <li>Justify derivative procedures symbolically</li>
+              </ul>
+            </div>
+            <div class="unit-footer">
+              <span class="badge badge-blue">Core</span>
+              <a href="https://github.com/RBarents18/APCalcAB/tree/main/curriculum/unit-03-differentiation-composite-implicit-and-inverse-functions" class="btn btn-secondary" style="font-size:.78rem; padding:.3rem .7rem;" target="_blank" rel="noopener">View Files ↗</a>
+            </div>
+          </article>
+
+          <!-- Unit 4 -->
+          <article class="unit-card uc-4">
+            <div class="unit-card-header">
+              <div style="display:flex; align-items:center; gap:.75rem;">
+                <div class="unit-number-badge" style="background:#0d9488;">4</div>
+                <h3>Contextual Applications of Differentiation</h3>
+              </div>
+            </div>
+            <div class="unit-card-body">
+              <p class="unit-desc">
+                Students apply derivatives to model and solve real-world problems involving rates of change,
+                motion, and approximation.
+              </p>
+              <ul class="unit-skills">
+                <li>Interpret derivatives in applied contexts</li>
+                <li>Model velocity and acceleration of a particle</li>
+                <li>Set up and solve related rates problems</li>
+                <li>Use linearization to approximate values</li>
+                <li>Apply L'Hôpital's Rule for indeterminate forms</li>
+              </ul>
+            </div>
+            <div class="unit-footer">
+              <span class="badge badge-blue">Core</span>
+              <a href="https://github.com/RBarents18/APCalcAB/tree/main/curriculum/unit-04-contextual-applications-of-differentiation" class="btn btn-secondary" style="font-size:.78rem; padding:.3rem .7rem;" target="_blank" rel="noopener">View Files ↗</a>
+            </div>
+          </article>
+
+          <!-- Unit 5 -->
+          <article class="unit-card uc-5">
+            <div class="unit-card-header">
+              <div style="display:flex; align-items:center; gap:.75rem;">
+                <div class="unit-number-badge" style="background:#d97706;">5</div>
+                <h3>Analytical Applications of Differentiation</h3>
+              </div>
+            </div>
+            <div class="unit-card-body">
+              <p class="unit-desc">
+                Students analyze relationships among a function and its derivatives to solve optimization
+                problems and sketch graphs with mathematical justification.
+              </p>
+              <ul class="unit-skills">
+                <li>Apply the Mean Value Theorem</li>
+                <li>Determine intervals of increase/decrease and critical points</li>
+                <li>Use first and second derivative tests</li>
+                <li>Determine concavity and locate inflection points</li>
+                <li>Solve applied optimization problems</li>
+              </ul>
+            </div>
+            <div class="unit-footer">
+              <span class="badge badge-blue">Core</span>
+              <a href="https://github.com/RBarents18/APCalcAB/tree/main/curriculum/unit-05-analytical-applications-of-differentiation" class="btn btn-secondary" style="font-size:.78rem; padding:.3rem .7rem;" target="_blank" rel="noopener">View Files ↗</a>
+            </div>
+          </article>
+
+          <!-- Unit 6 -->
+          <article class="unit-card uc-6">
+            <div class="unit-card-header">
+              <div style="display:flex; align-items:center; gap:.75rem;">
+                <div class="unit-number-badge" style="background:#ea580c;">6</div>
+                <h3>Integration and Accumulation of Change</h3>
+              </div>
+            </div>
+            <div class="unit-card-body">
+              <p class="unit-desc">
+                Students apply limits to define definite integrals and discover how the Fundamental Theorem
+                of Calculus connects differentiation and integration.
+              </p>
+              <ul class="unit-skills">
+                <li>Compute and interpret Riemann sums</li>
+                <li>Evaluate definite integrals</li>
+                <li>Apply both parts of the Fundamental Theorem of Calculus</li>
+                <li>Find antiderivatives using u-substitution</li>
+                <li>Interpret definite integrals in applied contexts</li>
+              </ul>
+            </div>
+            <div class="unit-footer">
+              <span class="badge badge-blue">Core</span>
+              <a href="https://github.com/RBarents18/APCalcAB/tree/main/curriculum/unit-06-integration-and-accumulation-of-change" class="btn btn-secondary" style="font-size:.78rem; padding:.3rem .7rem;" target="_blank" rel="noopener">View Files ↗</a>
+            </div>
+          </article>
+
+          <!-- Unit 7 -->
+          <article class="unit-card uc-7">
+            <div class="unit-card-header">
+              <div style="display:flex; align-items:center; gap:.75rem;">
+                <div class="unit-number-badge" style="background:#dc2626;">7</div>
+                <h3>Differential Equations</h3>
+              </div>
+            </div>
+            <div class="unit-card-body">
+              <p class="unit-desc">
+                Students solve differential equations and apply them to model exponential growth, decay,
+                and other real-world phenomena.
+              </p>
+              <ul class="unit-skills">
+                <li>Interpret and sketch slope fields</li>
+                <li>Approximate solutions using Euler's method</li>
+                <li>Solve separable differential equations</li>
+                <li>Model exponential growth and decay</li>
+                <li>Interpret solutions in applied contexts</li>
+              </ul>
+            </div>
+            <div class="unit-footer">
+              <span class="badge badge-gold">Important</span>
+              <a href="https://github.com/RBarents18/APCalcAB/tree/main/curriculum/unit-07-differential-equations" class="btn btn-secondary" style="font-size:.78rem; padding:.3rem .7rem;" target="_blank" rel="noopener">View Files ↗</a>
+            </div>
+          </article>
+
+          <!-- Unit 8 -->
+          <article class="unit-card uc-8">
+            <div class="unit-card-header">
+              <div style="display:flex; align-items:center; gap:.75rem;">
+                <div class="unit-number-badge" style="background:#16a34a;">8</div>
+                <h3>Applications of Integration</h3>
+              </div>
+            </div>
+            <div class="unit-card-body">
+              <p class="unit-desc">
+                Students use integration to solve problems involving net change, area between curves,
+                and volumes of 3-D solids.
+              </p>
+              <ul class="unit-skills">
+                <li>Find the average value of a function</li>
+                <li>Analyze particle motion using integrals</li>
+                <li>Calculate area between curves</li>
+                <li>Find volume using disk and washer methods</li>
+                <li>Find volume using known cross-section shapes</li>
+              </ul>
+            </div>
+            <div class="unit-footer">
+              <span class="badge badge-blue">Core</span>
+              <a href="https://github.com/RBarents18/APCalcAB/tree/main/curriculum/unit-08-applications-of-integration" class="btn btn-secondary" style="font-size:.78rem; padding:.3rem .7rem;" target="_blank" rel="noopener">View Files ↗</a>
+            </div>
+          </article>
+
+        </div><!-- /unit-grid -->
+
+      </div><!-- /page-container -->
+    </section>
+
+    <!-- ── Exam Weight Summary ───────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="exam-heading">
+      <div class="page-container">
+        <div class="section-header">
+          <span class="section-label">AP Exam</span>
+          <h2 id="exam-heading">Exam Weight Categories</h2>
+          <p>Skills in the repository are tagged by AP College Board exam weight to help prioritize instruction.</p>
+        </div>
+
+        <div class="card-grid card-grid--4">
+          <div class="card text-center">
+            <span style="font-size:2rem">🏛️</span>
+            <h3 style="margin-top:.5rem;">Foundational</h3>
+            <p>Unit 1 — critical bedrock skills that underpin all later calculus.</p>
+            <span class="badge badge-teal" style="margin-top:.5rem;">Unit 1</span>
+          </div>
+          <div class="card text-center">
+            <span style="font-size:2rem">⭐</span>
+            <h3 style="margin-top:.5rem;">Core</h3>
+            <p>Units 2–6 &amp; 8 — the bulk of AP Exam multiple-choice and FRQ content.</p>
+            <span class="badge badge-blue" style="margin-top:.5rem;">Units 2–6, 8</span>
+          </div>
+          <div class="card text-center">
+            <span style="font-size:2rem">📌</span>
+            <h3 style="margin-top:.5rem;">Important</h3>
+            <p>Unit 7 — frequently tested in FRQs; targeted review pays off.</p>
+            <span class="badge badge-gold" style="margin-top:.5rem;">Unit 7</span>
+          </div>
+          <div class="card text-center">
+            <span style="font-size:2rem">📊</span>
+            <h3 style="margin-top:.5rem;">Review Priority</h3>
+            <p>High / Medium / Maintenance priorities generated from class data.</p>
+            <a href="review.html" class="badge badge-red" style="margin-top:.5rem; text-decoration:none;">See Review Page</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p>AP Calculus AB Course Hub &nbsp;·&nbsp;
+      <a href="https://github.com/RBarents18/APCalcAB" target="_blank" rel="noopener">RBarents18/APCalcAB</a>
+      &nbsp;·&nbsp; Built for classroom use.
+    </p>
+    <p style="margin-top:.4rem; font-size:.78rem;">
+      AP® is a registered trademark of the College Board, which is not affiliated with this project.
+    </p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
